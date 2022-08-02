@@ -119,12 +119,7 @@ if {[string equal [get_filesets -quiet constrs_1] ""]} {
 # Set 'constrs_1' fileset object
 set obj [get_filesets constrs_1]
 
-# Add/Import constrs file and set constrs file properties
-set file "[file normalize "$origin_dir/vivado_project/Lab_1.srcs/constrs_1/new/BASYS3_Master.xdc"]"
-set file_added [add_files -norecurse -fileset $obj [list $file]]
-set file "new/BASYS3_Master.xdc"
-set file_obj [get_files -of_objects [get_filesets constrs_1] [list "*$file"]]
-set_property -name "file_type" -value "XDC" -objects $file_obj
+# Empty (no sources present)
 
 # Set 'constrs_1' fileset properties
 set obj [get_filesets constrs_1]
