@@ -107,6 +107,7 @@ if {[string equal [get_filesets -quiet sources_1] ""]} {
 # Set 'sources_1' fileset object
 set obj [get_filesets sources_1]
 set files [list \
+ [file normalize "${origin_dir}/src/Design_Sources/Test1.v"] \
  [file normalize "${origin_dir}/src/Design_Sources/Test0.v"] \
 ]
 add_files -norecurse -fileset $obj $files

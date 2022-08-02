@@ -20,12 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Test0(
+module Test1(
  input A,
  output B
 
     );
     
-    Test1 t1 (A,B); 
+    assign B=A;
 endmodule
 
